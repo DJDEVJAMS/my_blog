@@ -1,0 +1,66 @@
+* {
+    color: black;
+}
+
+
+
+
+.text1, h1{
+    color:beige;
+    margin-left:5%;
+}
+
+h2 {
+    color: black;
+}
+
+.title{
+color:beige;
+
+}
+
+header {
+Height:100px;
+padding: 0.5px;
+background-color: black;
+}
+
+#books{
+    Height: 25%;
+    Width:805px;
+    left:10%;
+}    
+
+#box1 {
+    Height: 100px;
+    Width: 150px;
+    left: 5%;
+    margin-left: 10px;
+    margin-right: 5%;
+    text-align: Center;
+}
+
+
+#box2 {
+    height: 100px;
+    Width: 850px;
+    left: 50%;
+    right: 10%;
+    bottom: 25%;
+
+    position: relative;
+    margin-left:5%;
+}
+
+
+/* #box1, #box2 {
+Bottom: 100%;
+border: 15px solid green;
+padding: 50px;
+margin: 20px;
+} */
+
+h1 form {
+    position: inline;
+    margin-right: 50%;
+}
