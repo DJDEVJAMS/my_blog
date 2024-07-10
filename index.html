@@ -4,42 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/css/style.css" >
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
 </head>
 
 <body>
-    <header id="text9">
+<a>
+    <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+      
+</a>
+    <header id="headerText">
         <h1 id="text1">My First Blog</h1>
+
     </header>
-    <div class="head1" id="top">
-        <Section>
-            <p "test"></p>
-        </Section>
-    </div>
     <br>
-    <div class="box" id="box1">
-        <section>
-   
-            <img src="./Assets/Books.webp" alt="Notebooks" id="Books">
+    <main>
+        <section class="box" id="box1">
+            <img src="./Assets/Books.webp" alt="Notebooks" id="books">
         </section>
-    </div>
-    <div>
         <section class="box" id="box2">
             <h2 id="text2">Whats on your mind?</H2>
             <form>
-                <label for="Name">Name:</label><br><br>
-                <input placeholder="" id="name"><br><br>
-                <label for="Title">Title:</Title>:</label><br><br>
-                <input placeholder="" id="title"><br><br>
-                <label for="Context">Context:</label><br><br>
-                <input placeholder="" id="jentry"><br><br>
+                <label for="Name">Name:</label>
+                <textarea id="comment-form-comment" rows="1" cols="50" maxlength="500"
+                    wrap="break-word"></textarea>
+                <label for="Title">Title:</Title>:</label>
+                <textarea id="comment-form-comment" rows="1" cols="50" maxlength="500"
+                    wrap="break-word"></textarea>
+                <label for="Comment">Context:</label>
+                <textarea id="comment-form-comment" rows="4" cols="50" maxlength="500"
+                    wrap="break-word"></textarea>
                 <input type="submit">
             </form>
         </section>
-    </div>
-    <!-- <div class="container dark">
-
-    </div> -->
+    </main>
+    <script src="./assets/js/script.js">
+    </script>
 </body>
 
 </html>
