@@ -4,46 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/form.css" />
+    <title>My Blog</title>
 </head>
 
 <body>
-<a>
-    <label class="switch">
-        <input type="checkbox" checked>
-        <span class="slider round"></span>
-      </label>
-      
-</a>
     <header id="headerText">
         <h1 id="text1">My First Blog</h1>
-
     </header>
-    <br>
     <main>
-        <section class="box" id="box1">
-            <img src="./Assets/Books.webp" alt="Notebooks" id="books">
-        </section>
-        <section class="box" id="box2">
-            <h2 id="text2">Whats on your mind?</H2>
-            <form>
-                <label for="Name">Name:</label>
-                <textarea id="comment-form-comment" rows="1" cols="50" maxlength="500"
-                    wrap="break-word"></textarea>
-                <label for="Title">Title:</Title>:</label>
-                <textarea id="comment-form-comment" rows="1" cols="50" maxlength="500"
-                    wrap="break-word"></textarea>
-                <label for="Comment">Context:</label>
-                <textarea id="comment-form-comment" rows="4" cols="50" maxlength="500"
-                    wrap="break-word"></textarea>
-                <input type="submit">
+        <section>
+            <form id="blogForm">
+                <label for="username">Username:</label>
+                <textarea id="username" rows="1" cols="50" maxlength="50" wrap="break-word" required></textarea>
+                <label for="title">Title:</label>
+                <textarea id="title" rows="1" cols="50" maxlength="100" wrap="break-word" required></textarea>
+                <label for="content">Content:</label>
+                <textarea id="content" rows="4" cols="50" maxlength="500" wrap="break-word" required></textarea>
+                <input type="submit" value="Submit">
             </form>
+            <p id="errorMessage" style="color: red;"></p>
         </section>
     </main>
-    <script src="./assets/js/script.js">
-    </script>
+
+    <footer>
+        <p><a href="https://developerportfolio.com">Developer's Portfolio</a></p>
+    </footer>
+    <script src="./assets/js/form.js"></script>
 </body>
 
 </html>
