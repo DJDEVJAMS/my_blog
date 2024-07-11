@@ -1,8 +1,5 @@
 ## Description
----
-A blog of work I can share my experinces and showcase my knowledge. 
----
-
+A blog of work I can share my experinces and showcase my knowledge.
 
 ## How to Use
 1. Open `index.html` in your browser.
