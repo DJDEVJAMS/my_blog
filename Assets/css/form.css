@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    margin: 10px;
+    width: 40%;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: rgb(105, 8, 8);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: darkred;
+}
