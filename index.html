@@ -9,13 +9,42 @@
     <link rel="stylesheet" href="./assets/css/form.css" />
     <title>My Blog</title>
 </head>
+<!-- 
+<body class="light-mode">
+    <a>
 
-<body>
+    </a>
     <header id="headerText">
         <h1 id="text1">My First Blog</h1>
     </header>
-    <main>
-        <section>
+    <section class="box" id="box1">
+        <img src="./Assets/Books.webp" alt="Notebooks" id="books">
+    <section>
+    <main> -->
+        <body>
+            <header>
+                <h1 id="headerText">'My First Blog</h1>
+                <a>
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                </a>
+            </header>
+<!--          
+            <p id="modeStatus">Light Mode</p> Dark Mode Light Mode Status 
+            <header id="headerText">
+                <h1 id="text1">My First Blog</h1>
+                
+            </header> -->
+            <br>
+            <main>
+                <section class="box" id="box1">
+                    <img src="./Assets/Books.webp" alt="Notebooks" id="books">
+                </section>
+                <section class="box" id="box2">
+                    <h2 id="text2">Whats on your mind?</h2>
+
             <form id="blogForm">
                 <label for="username">Username:</label>
                 <textarea id="username" rows="1" cols="50" maxlength="50" wrap="break-word" required></textarea>
@@ -33,6 +62,7 @@
         <p><a href="https://djdevjams.github.io/my_portfolio/">Alex B's Portfolio</a></p>
     </footer>
     <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
 
 </html>
