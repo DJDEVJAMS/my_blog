@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const postsContainer = document.getElementById('postsContainer');
     const backButton = document.getElementById('backButton');
 
-    const posts = JSON.parse(localStorage.getItem('posts')) || [];
+    const blogEntries = JSON.parse(localStorage.getItem('blogEntries')) || [];
 
-    posts.forEach(post => {
+    blogEntries.forEach(blogEntry => {
         const article = document.createElement('article');
         article.innerHTML = `
-            <h2>${post.title}</h2>
-            <p>${post.content}</p>
-            <p><strong>Author:</strong> ${post.username}</p>
+            <h2>${blogEntry.title}</h2>
+            <p>${blogEntry.content}</p>
+            <p><strong>Author:</strong> ${blogEntry.username}</p>
         `;
         postsContainer.appendChild(article);
     });

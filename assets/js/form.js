@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('blogForm');
     const errorMessage = document.getElementById('errorMessage');
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
 
         const username = document.getElementById('username').value.trim();
         const title = document.getElementById('title').value.trim();
@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const post = { username, title, content };
-        let posts = JSON.parse(localStorage.getItem('blog')) || [];
-        posts.push(post);
-        localStorage.setItem('blog', JSON.stringify(posts));
+        const blogEntry = { username, title, content };
+        let blogEntries = JSON.parse(localStorage.getItem('blogEntries')) || [];
+        blogEntries.push(blogEntry);
+        localStorage.setItem('blogEntries', JSON.stringify(blogEntries));
 
         window.location.href = 'blog.html';
     });
